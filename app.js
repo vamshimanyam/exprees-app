@@ -10,6 +10,10 @@ app.get("/",(req,res)=>{
     res.send("hello world!");
 })
 
+app.get("/health",(req,res)=>{
+    res.ssend("ok...")
+})
+
 app.listen(port,function(req,res){
     console.log("server started")
 });
